@@ -208,9 +208,9 @@ function nextMatch() {
 }
 
 function reset() {
-  localStorage.setItem("round", 0);
-  localStorage.setItem("match", 0);
-  localStorage.setItem("score", 0);
+  localStorage.setItem("round-ls", 0);
+  localStorage.setItem("match-ls", 0);
+  localStorage.setItem("score-ls", 0);
   document.getElementById("round").innerText = "Round 1";
   document.getElementById("match-info").innerText = `Match 1 of 5`;
   document.getElementById("score").innerText = 0;
