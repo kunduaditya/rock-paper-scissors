@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Rock, Paper, Scissors</h1>
+      </header>
+      <main>
+        <a href="/play/rps"
+          ><button class="btn">
+            Play Rock Paper Scissors
+            <div class="loader" id="score-rps"></div></button
+        ></a>
+        <a href="/play/rps-ls"
+          ><button class="btn btn-extra">
+            <p>
+              Play Rock Paper Scissors<span class="highlight"
+                >, (Lizard, Spock)</span
+              >
+            </p>
+            <div class="loader" id="score-rps-ls"></div></button
+        ></a>
+      </main>
+    </div>
+  </body>
+</html>

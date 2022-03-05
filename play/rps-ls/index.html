@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Rock, Paper, Scissors, Lizard, Spock</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="round" id="round">Round --</h1>
+      <div class="score-board">
+        <h1 class="game-name">
+          ROCK<br />PAPER<br />SCISSORS<br />Lizard<br />Spock
+        </h1>
+        <div class="score">
+          <p>Score</p>
+          <h1 id="score">12</h1>
+        </div>
+      </div>
+      <p id="match-info" align="center">Match 1 of 100</p>
+      <div class="dynamic" id="dynamic">
+        <div class="player-choice">
+          <div class="upper-choice">
+            <button
+              class="choice-button choice-scissor"
+              onclick="handleStart(1)"
+            >
+              <img src="../../images/icon-scissors.svg" />
+            </button>
+          </div>
+          <div class="middle-choice">
+            <button class="choice-button choice-spock" onclick="handleStart(5)">
+              <img src="../../images/icon-spock.svg" />
+            </button>
+            <button class="choice-button choice-paper" onclick="handleStart(2)">
+              <img src="../../images/icon-paper.svg" />
+            </button>
+          </div>
+          <div class="bottom-choice">
+            <button
+              class="choice-button choice-lizard"
+              onclick="handleStart(4)"
+            >
+              <img src="../../images/icon-lizard.svg" />
+            </button>
+            <button class="choice-button choice-rock" onclick="handleStart(3)">
+              <img src="../../images/icon-rock.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rules-bg-black"
+      id="rules-bg"
+      style="display: none"
+      onclick="handleclose()"
+    ></div>
+    <div class="rules" id="rules" style="display: none">
+      <div class="rules-header">
+        <h1>Rules</h1>
+        <button class="close" onclick="handleclose()">
+          <img src="../../images/icon-close.svg" />
+        </button>
+      </div>
+      <img class="rules-body" src="../../images/image-rules-bonus.svg" />
+      <ul>
+        <li>If you Won, (Score + 1)</li>
+        <li>If you Lose, (Score - 1)</li>
+      </ul>
+    </div>
+    <footer>
+      <a href="/">Back To Home</a>
+      <p>Create By <a href="https://zuaque.in">Zuaque</a></p>
+      <p onclick="reset()">Reset Game</p>
+    </footer>
+    <button class="rules-btn" onclick="handleclose()">RULES</button>
+  </body>
+</html>
